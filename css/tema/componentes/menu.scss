@@ -1,0 +1,25 @@
+.menu{
+	font-weight: $light;
+	padding: 25px 0;
+	h1{
+		font-weight: $light;
+		color: $dorado-l;
+	}
+	#lista{
+		li{
+			display: inline;
+			list-style: none;
+			font-size: .9em;
+			text-transform: uppercase;
+			margin: 20px 5px;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+    		h1{
+    			text-align: center;
+    		}
+    		li{
+    			text-align: center !important;
+    		}
+    	}
+}

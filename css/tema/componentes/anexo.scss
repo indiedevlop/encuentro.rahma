@@ -1,0 +1,29 @@
+.anexo{
+	h1{
+		font-weight: $light;
+		font-size: 1.5em;
+		color: $gris;
+		text-transform: uppercase;
+		margin: 20px 0px;
+	}
+	button{
+		h2{
+			font-size: 1.5em;
+			color: $negro;
+			text-align: center;
+		}	
+		h3{
+			font-size: .9em;
+			color: $negro;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.box{
+	height: 120px;
+	background: $dorado-l;
+	border-radius: 7px;
+	padding: 20px;
+}

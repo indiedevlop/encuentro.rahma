@@ -1,0 +1,26 @@
+.header{
+	line-height: 1.5;
+	text-align: center;
+	padding: 30px 0px;
+	h1{
+		font-weight: $light;
+		font-size: 2em;
+		text-align: center;
+		color: $dorado;
+		margin: 0;
+	}
+	h2{
+		font-size: 1.4em;
+		font-weight: $light;
+		color: $gris;
+		text-align: center;
+		margin: 0;
+	}
+	h3{
+		font-weight: $light;
+		font-size: 2em;
+		color: $dorado-l;
+		text-align: center;
+		margin: 0;
+	}
+}

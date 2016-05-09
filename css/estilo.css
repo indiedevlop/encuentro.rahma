@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 200%;
+  background-color: #1C1D1F;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -999;
+}
+
+@media only screen and (max-width: 768px) {
+  #particles-js #particles-js {
+    min-height: 400%;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+hr {
+  color: #CDD3D1;
+}
+
+button {
+  width: 100%;
+  border: none;
+}
+
+button:hover {
+  background: #9C6E45;
+}
+
+a {
+  color: #9C6E45;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CBA674;
+}
+
+.menu {
+  font-weight: 300;
+  padding: 25px 0;
+}
+
+.menu h1 {
+  font-weight: 300;
+  color: #CBA674;
+}
+
+.menu #lista li {
+  display: inline;
+  list-style: none;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin: 20px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu h1 {
+    text-align: center;
+  }
+  .menu li {
+    text-align: center !important;
+  }
+}
+
+.header {
+  line-height: 1.5;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.header h1 {
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  color: #9C6E45;
+  margin: 0;
+}
+
+.header h2 {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #CDD3D1;
+  text-align: center;
+  margin: 0;
+}
+
+.header h3 {
+  font-weight: 300;
+  font-size: 2em;
+  color: #CBA674;
+  text-align: center;
+  margin: 0;
+}
+
+.information {
+  padding: 20px 0;
+}
+
+.information h2 {
+  font-weight: 300;
+  color: #CDD3D1;
+}
+
+.information h3 {
+  font-weight: 400;
+  font-size: .8em;
+  color: #CBA674;
+  text-transform: uppercase;
+}
+
+.information p {
+  font-weight: 400;
+  font-size: .9em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #CDD3D1;
+}
+
+@media only screen and (max-width: 768px) {
+  .information {
+    padding: 0;
+  }
+}
+
+.anexo h1 {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #CDD3D1;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.anexo button h2 {
+  font-size: 1.5em;
+  color: #343439;
+  text-align: center;
+}
+
+.anexo button h3 {
+  font-size: .9em;
+  color: #343439;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box {
+  height: 120px;
+  background: #CBA674;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.contacto h1 {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #CDD3D1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.contacto ul {
+  list-style: square;
+  color: #CDD3D1;
+}
+
+.contacto li {
+  line-height: 1.6;
+}
+
+.galeria h1 {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #CDD3D1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.galeria img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.galeria li {
+  list-style: none;
+}
+
+.footer {
+  padding: 0 0;
+}
+
+.footer p {
+  text-align: center;
+}

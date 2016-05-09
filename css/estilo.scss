@@ -1,0 +1,19 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+// Tamaños
+$light		: 300;
+$normal		: 400;
+$bold		: 700;
+
+// Colores
+$bg--body		: #1C1D1F;
+$negro			: #343439;
+$aguamarina		: #00DAA6;
+$gris			: #CDD3D1;
+$dorado-l		: #CBA674;
+$dorado			: #9C6E45;
+
+// Tema
+@import "tema/base";
+@import "tema/componentes";

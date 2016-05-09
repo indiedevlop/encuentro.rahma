@@ -1,0 +1,16 @@
+.contacto{
+	h1{
+		font-weight: $light;
+		font-size: 1.5em;
+		color: $gris;
+		text-transform: uppercase;
+		margin: 20px 0;
+	}
+	ul{
+  		list-style: square;
+  		color: $gris;
+	}
+	li{
+		line-height: 1.6;
+	}
+}

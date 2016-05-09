@@ -1,0 +1,24 @@
+.contenedor{
+  z-index: -999;
+  .one{
+  	position: fixed;
+    height: inherit;
+    	@media only screen and (max-width: 768px) {
+    		display: none;
+    	}
+  }
+  .two{
+    float: right;
+    	@media only screen and (max-width: 768px) {
+    		float: left;
+    	}
+  }
+  .three{
+  	float: right;
+  	background: tomato;
+  		@media only screen and (max-width: 768px) {
+    		float: left;
+    	}
+  }
+}
+
