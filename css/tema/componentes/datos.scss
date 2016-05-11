@@ -1,0 +1,134 @@
+.datos{
+	h1{
+		font-weight: $light;
+		font-size: 1.5em;
+		color: $gris;
+		text-transform: uppercase;
+		margin: 20px 0;
+	}
+	h2{
+		font-weight: $light;
+		font-size: 1.2em;
+		margin: 20px 0;
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 1em;
+		padding: 0 20px;
+	}
+	li{
+		list-style: circle;
+		color: $gris;
+		margin: 5px 20px;
+	}	
+}
+
+.t{
+	font-size: .9em;
+	color: $dorado-l;
+}
+
+.accordion dl,
+.accordion-list {
+   &:after {
+       content: "";
+       display: block;
+       width: 100%;
+       background-color: transparent;
+     }
+}
+.accordion dd,
+.accordion__panel {
+   background-color: transparent;
+   font-size: 1em;
+   line-height: 1.5em; 
+}
+.accordion p {
+	color: $gris;
+	padding: 10px 20px;
+	margin: 0;
+}
+.accordion ul{
+	padding: 0 0 20px;
+}
+
+.accordion li{
+	list-style: circle;
+}
+
+.accordion {
+    position: relative;
+    background-color: transparent;
+}
+.accordionTitle,
+.accordion__Heading {
+	background-color: $dorado-l;
+	text-align:center;
+    font-weight: $normal;
+    padding: 2em;
+    display: block;
+    text-decoration:none;
+    color: $negro;
+    transition:background-color 0.5s ease-in-out;
+  	border-bottom:1px solid darken($gris, 5%);
+  &:before {
+   content: "+";
+   font-size:1.5em;
+   line-height:0.5em;
+   float:left; 
+   transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color: $dorado;
+  }
+}
+.accordionTitleActive, 
+.accordionTitle.is-expanded {
+	background-color: $dorado;
+    &:before {
+    	transform:rotate(-225deg);
+    }
+}
+.accordionItem {
+    overflow: hidden;
+    transition: max-height 1s;   
+    @media screen and (min-width:48em) {
+        max-height: 55em;
+        transition:max-height 0.5s
+    }   
+}
+ 
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+.animateIn {
+     animation: accordionIn 0.45s normal ease-in-out both 1; 
+}
+.animateOut {
+     animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       opacity: 1;
+       transform:scale(1);
+     }
+     100% {
+          opacity:0;
+           transform:scale(0.9) rotateX(-60deg);
+       }
+}

@@ -151,6 +151,10 @@ a:hover {
   color: #CDD3D1;
 }
 
+.information a {
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 768px) {
   .information {
     padding: 0;
@@ -185,6 +189,159 @@ a:hover {
   padding: 20px;
 }
 
+.datos h1 {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #CDD3D1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.datos h2 {
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.datos p {
+  font-size: 1em;
+  padding: 0 20px;
+}
+
+.datos li {
+  list-style: circle;
+  color: #CDD3D1;
+  margin: 5px 20px;
+}
+
+.t {
+  font-size: .9em;
+  color: #CBA674;
+}
+
+.accordion dl:after,
+.accordion-list:after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+
+.accordion dd,
+.accordion__panel {
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.accordion p {
+  color: #CDD3D1;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.accordion ul {
+  padding: 0 0 20px;
+}
+
+.accordion li {
+  list-style: circle;
+}
+
+.accordion {
+  position: relative;
+  background-color: transparent;
+}
+
+.accordionTitle,
+.accordion__Heading {
+  background-color: #CBA674;
+  text-align: center;
+  font-weight: 400;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #343439;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #bfc7c5;
+}
+
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #9C6E45;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #9C6E45;
+}
+
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+.accordionItem {
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 55em;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+.animateIn {
+  animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
+}
+
 .contacto h1 {
   font-weight: 300;
   font-size: 1.5em;
@@ -200,6 +357,11 @@ a:hover {
 
 .contacto li {
   line-height: 1.6;
+}
+
+.contacto p {
+  font-size: .9em;
+  padding: 0 10px;
 }
 
 .galeria h1 {
